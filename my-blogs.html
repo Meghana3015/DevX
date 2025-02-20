@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSpot - My Blogs</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BlogSpot</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-blogs.html" class="active">My Blogs</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="my-blogs-header">
+            <h1>My Blogs</h1>
+            <button class="new-blog-btn">Create New Blog</button>
+        </div>
+
+        <div class="filter-section">
+            <h3>Filter My Posts</h3>
+            <div class="filter-options">
+                <select class="filter-dropdown" id="status-filter">
+                    <option value="">All Status</option>
+                    <option value="published">Published</option>
+                    <option value="draft">Drafts</option>
+                </select>
+                
+                <select class="filter-dropdown" id="sort-filter">
+                    <option value="recent">Most Recent</option>
+                    <option value="popular">Most Popular</option>
+                    <option value="comments">Most Comments</option>
+                </select>
+                
+                <input type="text" class="filter-search" placeholder="Search my blogs...">
+                <button class="filter-btn">Apply</button>
+            </div>
+        </div>
+
+        <div class="blog-container">
+            <div class="blog-card my-blog">
+                <div class="blog-header">
+                    <div class="blog-info">
+                        <h3>Getting Started with React Hooks</h3>
+                        <p class="date">Published on Feb 15, 2025 • JavaScript</p>
+                    </div>
+                    <div class="blog-actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <p>React Hooks have revolutionized the way we build components. In this guide, I share my experiences and best practices when working with useState and useEffect...</p>
+                </div>
+                <div class="blog-footer">
+                    <!-- <button class="read-more">View Full Post</button> -->
+                    <div class="blog-stats">
+                        <span>❤️ 34</span>
+                        <span>💬 12</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card my-blog">
+                <div class="blog-header">
+                    <div class="blog-info">
+                        <h3>CSS Grid vs Flexbox: When to Use Each</h3>
+                        <p class="date">Published on Jan 28, 2025 • CSS</p>
+                    </div>
+                    <div class="blog-actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <p>Both CSS Grid and Flexbox are powerful layout tools, but they serve different purposes. In this article, I break down when to use each based on real-world scenarios...</p>
+                </div>
+                <div class="blog-footer">
+                    <!-- <button class="read-more">View Full Post</button> -->
+                    <div class="blog-stats">
+                        <span>❤️ 27</span>
+                        <span>💬 8</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card my-blog draft">
+                <div class="blog-header">
+                    <div class="blog-info">
+                        <h3>JavaScript Performance Optimization Techniques</h3>
+                        <p class="date">Draft • Last edited on Feb 17, 2025 • JavaScript</p>
+                    </div>
+                    <div class="blog-actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <p>This draft covers various techniques to optimize JavaScript performance, including memoization, debouncing, and efficient DOM manipulation...</p>
+                </div>
+                <div class="blog-footer">
+                    <button class="publish-btn">Publish</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BlogSpot. All rights reserved.</p>
+    </footer>
+</body>
+</html>

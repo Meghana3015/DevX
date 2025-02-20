@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Blog Post</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BlogSpot</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-blogs.html">My Blogs</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="new-blog-post">
+            <h1>Create New Blog Post</h1>
+            <form>
+                <label for="title">Blog Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter blog title" required>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" placeholder="Enter author name" required>
+
+                <label for="featured-image">Featured Image URL:</label>
+                <input type="url" id="featured-image" name="featured-image" placeholder="Enter image URL" required>
+
+                <label for="content">Main Content:</label>
+                <textarea id="content" name="content" rows="10" placeholder="Write your blog content here..." required></textarea>
+
+                <div class="share-buttons">
+                    <h3>Share this post:</h3>
+                    <a href="#" target="_blank">WhatsApp</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Facebook</a>
+                </div>
+
+                <button type="submit">Publish Post</button>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BlogSpot. All rights reserved.</p>
+    </footer>
+</body>
+</html>
