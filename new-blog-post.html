@@ -5,6 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create New Blog Post</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .new-blog-post {
+            background-color: var(--white-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px var(--shadow-color);
+        }
+        
+        .new-blog-post h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+        
+        .new-blog-post form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+        
+        .new-blog-post form input,
+        .new-blog-post form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            color: var(--text-color);
+            background-color: var(--white-color);
+        }
+        
+        .new-blog-post form button {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .new-blog-post form button:hover {
+            background-color: var(--secondary-color);
+            color: var(--hover-text-color);
+        }
+        
+        .share-buttons {
+            margin-top: 20px;
+        }
+        
+        .share-buttons h3 {
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+        
+        .share-buttons a {
+            display: inline-block;
+            margin-right: 10px;
+            color: var(--white-color);
+            background-color: var(--primary-color);
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        
+        .share-buttons a:hover {
+            background-color: var(--secondary-color);
+            color: var(--hover-text-color);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -34,15 +119,6 @@
 
                 <label for="content">Main Content:</label>
                 <textarea id="content" name="content" rows="10" placeholder="Write your blog content here..." required></textarea>
-
-                <div class="share-buttons">
-                    <h3>Share this post:</h3>
-                    <a href="#" target="_blank">WhatsApp</a>
-                    <a href="#" target="_blank">Twitter</a>
-                    <a href="#" target="_blank">LinkedIn</a>
-                    <a href="#" target="_blank">Facebook</a>
-                </div>
-
                 <button type="submit">Publish Post</button>
             </form>
         </article>
