@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -21,9 +22,9 @@ main {
     width: 100%;
 }
 
-/* Simplified Header */
+/* Header */
 header {
-    background-color: #08437F ;
+    background-color: #08437F;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -56,6 +57,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #e0e0e0;
+    color: #000;
 }
 
 nav ul li a.active {
@@ -67,11 +69,8 @@ nav ul li a.active {
 /* Filter Section */
 .filter-section {
     margin: 20px 0;
-    /* padding: 15px; */
-    /* background-color: #ffffff; */
     border-radius: 8px;
     margin-bottom: 40px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .filter-section h3 {
@@ -250,7 +249,7 @@ nav ul li a.active {
     border-left: 4px solid #ffc107;
 }
 
-/* Simplified Footer */
+/* Footer */
 footer {
     background-color: #08437F;
     color: #ffffff;
@@ -267,13 +266,6 @@ footer {
     background-image: url('/DevX/assets/imgs/hero.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.profile-image {
-    /* width: 150px;
-    height: 150px; */
-    /* border-radius: 50%; */
-    margin-bottom: 20px;
 }
 
 .hero h1 {
