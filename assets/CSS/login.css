@@ -1,8 +1,19 @@
-*{
+:root {
+    --primary-color: #08437F;
+    --secondary-color: #FECF00;
+    --text-color: #333333;
+    --background-color: #ffffff;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --border-color: #ced4da;
+    --hover-background-color: #e0e0e0;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family);
 }
 
 body {
@@ -12,6 +23,7 @@ body {
     height: 100vh;
     width: 100vw;
     margin: 0;
+    padding: 0;
     background-image: url(../imgs/hero.jpeg);
     background-size: cover;
     background-position: center;
@@ -23,15 +35,15 @@ body {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: var(--background-color);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
     text-align: center;
 }
 
 .form-container h2 {
     margin-bottom: 20px;
-    color: #333333;
+    color: var(--text-color);
 }
 
 .form-container input[type="text"],
@@ -40,19 +52,19 @@ body {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ced4da;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
 }
 
 .form-container input[type="submit"] {
-    background-color: #08437F;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--background-color);
     font-weight: 600;
     cursor: pointer;
 }
 
 .form-container input[type="submit"]:hover {
-    background-color: #FECF00;
+    background-color: var(--secondary-color);
     color: #000;
 }
 
@@ -61,42 +73,10 @@ body {
 }
 
 .signup-link a, .login-link a {
-    color: #08437F;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 .signup-link a:hover, .login-link a:hover {
     text-decoration: underline;
-}
-
-.logo {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 15px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-}
-
-nav ul li a:hover {
-    background-color: #e0e0e0;
-}
-
-nav ul li a.active {
-    background-color: #FECF00;
-    color: #000;
-    font-weight: 600;
 }
