@@ -8,7 +8,6 @@
     --hover-bg-color: #e0e0e0;
     --hover-text-color: #000;
     --cta-bg-color: #ffc107;
-    --cta-hover-bg-color: #555555;
     --border-color: #ced4da;
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
@@ -112,10 +111,12 @@ nav ul li a.active {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .cta-btn:hover {
-    background-color: var(--cta-hover-bg-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 /* Filter Section */
@@ -268,6 +269,7 @@ nav ul li a.active {
     border-radius: 4px;
     cursor: pointer;
     font-size: 1em;
+    text-decoration: none;
 }
 
 .new-blog-btn:hover {

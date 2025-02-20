@@ -2,9 +2,10 @@
     --primary-color: #08437F;
     --secondary-color: #FECF00;
     --text-color: #333333;
-    --background-color: #ffffff;
+    --background-color: #dbf0ff;
     --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     --border-color: #ced4da;
+    --white-color: #ffffff;
     --hover-background-color: #e0e0e0;
     --font-family: 'Poppins', sans-serif;
 }
@@ -24,7 +25,7 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
-    background-image: url(../imgs/hero.jpeg);
+    background-color: var(--background-color);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,10 +36,17 @@ body {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background-color: var(--background-color);
+    background-color: var(--white-color);
     border-radius: 8px;
     box-shadow: var(--box-shadow);
     text-align: center;
+}
+
+.form-banner {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px;
+    height: 120px;
 }
 
 .form-container h2 {
