@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
-    <link rel="stylesheet" href="assets/CSS/login.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 <body>
-    <div class="form-container">
-        <h2>SIGN UP</h2>
-        <form class="signup-form">
-            <input type="text" placeholder="Full Name" required>
-            <input type="text" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-            <input type="password" placeholder="Confirm Password" required>
-            <input type="submit" value="Sign Up">
-        </form>
-
-        <div class="login-link">
-            <p>Already have an account? <a href="./login.html">Log In</a></p>
+    <header>
+        <div class="logo">DevX</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html" class="active">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>SIGN UP</h2>
+            <form class="signup-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <input type="submit" value="Sign Up">
+            </form>
+            <div class="login-link">
+                <p>Already have an account? <a href="./login.html">Log In</a></p>
+            </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 DevX. All rights reserved.</p>
+    </footer>
 </body>
 </html>
